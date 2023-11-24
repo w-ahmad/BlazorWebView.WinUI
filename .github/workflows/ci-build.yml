@@ -28,4 +28,4 @@ jobs:
       uses: actions/upload-artifact@v1
       with:
         name: NuGet Packages
-        path: \**\artifacts\NuGet\Release
+        path: artifacts\NuGet\Release
