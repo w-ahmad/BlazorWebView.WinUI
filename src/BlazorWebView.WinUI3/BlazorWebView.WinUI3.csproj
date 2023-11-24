@@ -20,7 +20,7 @@
     <PackageProjectUrl>https://github.com/w-ahmad/BlazorWebView.WinUI3</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageOutputPath>$(MSBuildThisFileDirectory)..\artifacts\NuGet\$(Configuration)\</PackageOutputPath>
+    <PackageOutputPath>$(MSBuildThisFileDirectory)\artifacts\NuGet\$(Configuration)\</PackageOutputPath>
   </PropertyGroup>
 
   <ItemGroup>
