@@ -3,6 +3,7 @@ name: ci-build
 on:
   push:
     branches: [ main ]
+    paths: [ src/** ]
   pull_request:
     branches: [ main ]
 
