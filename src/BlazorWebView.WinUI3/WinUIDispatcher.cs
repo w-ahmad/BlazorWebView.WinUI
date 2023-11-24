@@ -4,16 +4,15 @@
 using CommunityToolkit.WinUI;
 using Microsoft.UI.Dispatching;
 using System;
-using System.Runtime.ExceptionServices;
 using System.Threading.Tasks;
 
-namespace Microsoft.AspNetCore.Components.WebView.Wpf
+namespace Microsoft.AspNetCore.Components.WebView.WinUI
 {
-    internal sealed class WpfDispatcher : Dispatcher
+    internal sealed class WinUIDispatcher : Dispatcher
     {
         private readonly DispatcherQueue _dispatcherQueue;
 
-        public WpfDispatcher(DispatcherQueue windowsDispatcher)
+        public WinUIDispatcher(DispatcherQueue windowsDispatcher)
         {
             _dispatcherQueue = windowsDispatcher ?? throw new ArgumentNullException(nameof(windowsDispatcher));
         }

@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Components.WebView.Wpf;
+﻿using Microsoft.AspNetCore.Components.WebView.WinUI;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 
 namespace Microsoft.Extensions.DependencyInjection
@@ -13,12 +13,12 @@ namespace Microsoft.Extensions.DependencyInjection
 		/// </summary>
 		/// <param name="services">The <see cref="IServiceCollection"/>.</param>
 		/// <returns>The <see cref="IServiceCollection"/>.</returns>
-		public static IWpfBlazorWebViewBuilder AddWpfBlazorWebView(this IServiceCollection services)
+		public static IWinUIBlazorWebViewBuilder AddWpfBlazorWebView(this IServiceCollection services)
 		{
 			services.AddBlazorWebView();
 			services.TryAddSingleton(new BlazorWebViewDeveloperTools { Enabled = false });
-			services.TryAddSingleton(_ => new WpfBlazorMarkerService());
-			return new WpfBlazorWebViewBuilder(services);
+			services.TryAddSingleton(_ => new WinUIBlazorMarkerService());
+			return new WinUIBlazorWebViewBuilder(services);
 		}
 
 		/// <summary>
@@ -28,7 +28,7 @@ namespace Microsoft.Extensions.DependencyInjection
 		/// <returns>The <see cref="IServiceCollection"/>.</returns>
 		public static IServiceCollection AddBlazorWebViewDeveloperTools(this IServiceCollection services)
 		{
-			return services.AddSingleton<BlazorWebViewDeveloperTools>(new BlazorWebViewDeveloperTools { Enabled = true });
+			return services.AddSingleton(new BlazorWebViewDeveloperTools { Enabled = true });
 		}
 	}
 }

@@ -17,7 +17,7 @@ using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using WebView2Control = Microsoft.UI.Xaml.Controls.WebView2;
 
-namespace Microsoft.AspNetCore.Components.WebView.Wpf
+namespace Microsoft.AspNetCore.Components.WebView.WinUI
 {
     /// <summary>
     /// A Windows Presentation Foundation (WPF) control for hosting Razor components locally in Windows desktop applications.
@@ -102,7 +102,7 @@ namespace Microsoft.AspNetCore.Components.WebView.Wpf
         {
             DefaultStyleKey = typeof(BlazorWebView);
 
-            ComponentsDispatcher = new WpfDispatcher(DispatcherQueue);
+            ComponentsDispatcher = new WinUIDispatcher(DispatcherQueue);
 
             SetValue(RootComponentsProperty, new RootComponentsCollection());
             RootComponents.CollectionChanged += HandleRootComponentsCollectionChanged;
@@ -271,7 +271,7 @@ namespace Microsoft.AspNetCore.Components.WebView.Wpf
             _webviewManager?.Navigate(path);
         }
 
-        private WpfDispatcher ComponentsDispatcher { get; }
+        private WinUIDispatcher ComponentsDispatcher { get; }
 
         private void HandleRootComponentsCollectionChanged(object? sender, NotifyCollectionChangedEventArgs eventArgs)
         {

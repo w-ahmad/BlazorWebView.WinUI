@@ -3,13 +3,13 @@
 
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Microsoft.AspNetCore.Components.WebView.Wpf
+namespace Microsoft.AspNetCore.Components.WebView.WinUI
 {
-	internal class WpfBlazorWebViewBuilder : IWpfBlazorWebViewBuilder
+	internal class WinUIBlazorWebViewBuilder : IWinUIBlazorWebViewBuilder
 	{
 		public IServiceCollection Services { get; }
 
-		public WpfBlazorWebViewBuilder(IServiceCollection services)
+		public WinUIBlazorWebViewBuilder(IServiceCollection services)
 		{
 			Services = services;
 		}

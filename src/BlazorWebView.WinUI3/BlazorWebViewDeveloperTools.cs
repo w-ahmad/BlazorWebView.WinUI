@@ -1,4 +1,4 @@
-﻿namespace Microsoft.AspNetCore.Components.WebView.Wpf
+﻿namespace Microsoft.AspNetCore.Components.WebView.WinUI
 {
 	internal class BlazorWebViewDeveloperTools
 	{

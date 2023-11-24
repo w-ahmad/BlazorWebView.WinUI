@@ -3,12 +3,12 @@
 
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Microsoft.AspNetCore.Components.WebView.Wpf
+namespace Microsoft.AspNetCore.Components.WebView.WinUI
 {
 	/// <summary>
 	/// A builder for WPF Blazor WebViews.
 	/// </summary>
-	public interface IWpfBlazorWebViewBuilder
+	public interface IWinUIBlazorWebViewBuilder
 	{
 		/// <summary>
 		/// Gets the builder service collection.

@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Components.Web;
 using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Logging;
 using System.Diagnostics;
-using Microsoft.AspNetCore.Components.WebView.Wpf;
+using Microsoft.AspNetCore.Components.WebView.WinUI;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Web.WebView2.Core;
 using WebView2Control = Microsoft.UI.Xaml.Controls.WebView2;
@@ -76,7 +76,7 @@ namespace Microsoft.AspNetCore.Components.WebView.WebView2
 		{
 			ArgumentNullException.ThrowIfNull(webview);
 
-			if (services.GetService<WpfBlazorMarkerService>() is null)
+			if (services.GetService<WinUIBlazorMarkerService>() is null)
 			{
 				throw new InvalidOperationException(
 					"Unable to find the required services. " +
