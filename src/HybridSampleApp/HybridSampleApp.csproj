@@ -29,7 +29,7 @@
     <ProjectCapability Include="Msix" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BlazorWebView.WinUI3\BlazorWebView.WinUI3.csproj" />
+    <ProjectReference Include="..\BlazorWebView.WinUI\BlazorWebView.WinUI.csproj" />
   </ItemGroup>
 
   <!-- 

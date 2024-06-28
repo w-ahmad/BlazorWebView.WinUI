@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net8.0-windows10.0.19041.0</TargetFramework>
     <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
@@ -12,12 +12,12 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <Description>A clone of WPF BlazorWebView to use in WinUI3.</Description>
+    <Description>Build WinUI apps with Blazor and WebView2.</Description>
     <PackageTags>WinUI, WinAppSDK, Windows, XAML, blazor, webview, aspnet</PackageTags>
-    <PackageId>BlazorWebView.WinUI3</PackageId>
-    <Product>BlazorWebView WinUI3</Product>
-    <RepositoryUrl>https://github.com/w-ahmad/BlazorWebView.WinUI3</RepositoryUrl>
-    <PackageProjectUrl>https://github.com/w-ahmad/BlazorWebView.WinUI3</PackageProjectUrl>
+    <PackageId>BlazorWebView.WinUI</PackageId>
+    <Product>BlazorWebView WinUI</Product>
+    <RepositoryUrl>https://github.com/w-ahmad/BlazorWebView.WinUI</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/w-ahmad/BlazorWebView.WinUI</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageOutputPath>$(MSBuildThisFileDirectory)..\..\artifacts\NuGet\$(Configuration)\</PackageOutputPath>
