@@ -29,7 +29,7 @@ namespace SampleApp
             InitializeComponent();
 
             var serviceCollection = new ServiceCollection();
-            serviceCollection.AddWpfBlazorWebView();
+        serviceCollection.AddWinUIBlazorWebView();
             serviceCollection.AddBlazorWebViewDeveloperTools();
 
             blazorWebView.Services = serviceCollection.BuildServiceProvider();
