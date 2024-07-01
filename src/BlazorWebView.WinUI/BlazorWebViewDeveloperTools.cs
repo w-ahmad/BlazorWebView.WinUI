@@ -1,7 +1,6 @@
-﻿namespace Microsoft.AspNetCore.Components.WebView.WinUI
+﻿namespace Microsoft.AspNetCore.Components.WebView.WinUI;
+
+internal class BlazorWebViewDeveloperTools
 {
-	internal class BlazorWebViewDeveloperTools
-	{
-		public bool Enabled { get; set; } = false;
-	}
+    public bool Enabled { get; set; } = false;
 }
