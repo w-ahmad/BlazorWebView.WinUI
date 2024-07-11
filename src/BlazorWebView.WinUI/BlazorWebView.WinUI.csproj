@@ -14,8 +14,8 @@
   <PropertyGroup>
     <Description>Build WinUI apps with Blazor and WebView2.</Description>
     <PackageTags>WinUI, WinAppSDK, Windows, XAML, blazor, webview, aspnet</PackageTags>
-    <PackageId>BlazorWebView.WinUI</PackageId>
-    <Product>BlazorWebView WinUI</Product>
+    <PackageId>BlazorWebView.WinUI3</PackageId>
+    <Product>BlazorWebView for WinUI</Product>
     <RepositoryUrl>https://github.com/w-ahmad/BlazorWebView.WinUI</RepositoryUrl>
     <PackageProjectUrl>https://github.com/w-ahmad/BlazorWebView.WinUI</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
