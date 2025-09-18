@@ -24,7 +24,7 @@ jobs:
         msbuild /restore /t:Build,Pack src/BlazorWebView.WinUI/BlazorWebView.WinUI.csproj /p:Configuration=Release /p:PackageVersion=${{ steps.version.outputs.version-without-v }}
 
     - name: Upload artifacts
-      uses: actions/upload-artifact@v1
+      uses: actions/upload-artifact@v4
       with:
         name: NuGet Packages
         path: artifacts/NuGet/Release 
