@@ -224,6 +224,10 @@ public class BlazorWebView : Control, IAsyncDisposable
         _webviewManager.Navigate(StartPath);
     }
 
+    /// <summary>
+    /// Navigates to the specified URI.
+    /// </summary>
+    /// <param name="path">The URI to navigate to.</param>
     public void Navigate(string path)
     {
         _webviewManager?.Navigate(path);

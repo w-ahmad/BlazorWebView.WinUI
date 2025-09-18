@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.Web.WebView2.Core;
+using WebView2Control = Microsoft.UI.Xaml.Controls.WebView2;
 
 namespace Microsoft.AspNetCore.Components.WebView;
 
